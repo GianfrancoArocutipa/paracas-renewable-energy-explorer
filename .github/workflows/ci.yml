@@ -1,0 +1,65 @@
+name: Paracas Clean Energy Explorer CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  validate-and-test:
+    name: 🧪 Quality Assurance & Smoke Testing
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: 📦 Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install flake8
+
+      - name: 🔍 Static Code Analysis (Flake8 Linting)
+        run: |
+          # Stop the build if there are Python syntax errors or undefined names
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          # Exit-zero treats all errors as warnings
+          flake8 . --count --exit-zero --max-complexity=15 --max-line-length=127 --statistics
+
+      - name: 📂 Verify Bundled Dataset Snapshot & Metadata Integrity
+        run: |
+          python -c "
+          import os, json, pandas as pd
+          csv_path = 'data/paracas_renewable_daily.csv'
+          meta_path = 'data/metadata.json'
+          assert os.path.exists(csv_path), 'Dataset CSV is missing!'
+          assert os.path.exists(meta_path), 'Metadata JSON is missing!'
+          df = pd.read_csv(csv_path)
+          assert len(df) >= 1800, f'Expected at least 1800 daily records, found {len(df)}'
+          required_cols = ['date', 'temp_2m_c', 'solar_irradiance_kwh_m2', 'wind_speed_50m_ms', 'wind_speed_10m_ms', 'wind_direction_50m_deg']
+          for col in required_cols:
+              assert col in df.columns, f'Missing required column: {col}'
+          with open(meta_path, 'r', encoding='utf-8') as f:
+              meta = json.load(f)
+              assert 'coordinates' in meta, 'Metadata missing coordinates'
+          print(f'✅ Dataset snapshot verified successfully: {len(df)} daily observations from NASA POWER!')
+          "
+
+      - name: 🧪 Smoke Test App Import and Compilation
+        run: |
+          python -c "import app; print('✅ App syntax and component imports verified successfully!')"
+
+      - name: 🚀 Validate Headless Streamlit Server Startup
+        run: |
+          # Launch Streamlit in headless mode for 10 seconds; timeout exit code 124 is considered success
+          timeout 12s streamlit run app.py --server.headless=true --server.port=8501 || [ $? -eq 124 ]
+          echo "✅ Streamlit dashboard successfully launched in headless production mode!"

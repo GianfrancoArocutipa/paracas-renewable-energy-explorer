@@ -1,0 +1,27 @@
+{
+  "dataset_name": "Paracas Renewable Wind & Solar Resource Daily Snapshot",
+  "source": "NASA Prediction Of Worldwide Energy Resources (POWER) Project",
+  "source_url": "https://power.larc.nasa.gov/",
+  "coordinates": {
+    "latitude": -13.83,
+    "longitude": -76.25,
+    "location_name": "Paracas / Pisco Coastal Wind & Solar Corridor, Ica, Peru"
+  },
+  "temporal_range": {
+    "start_date": "2020-01-01",
+    "end_date": "2024-12-31",
+    "frequency": "Daily",
+    "total_days": 1827
+  },
+  "parameters": {
+    "temp_2m_c": "Temperature at 2 Meters (\u00b0C)",
+    "solar_irradiance_kwh_m2": "All Sky Surface Downward Solar Irradiance (kWh/m\u00b2/day)",
+    "wind_speed_50m_ms": "Wind Speed at Hub Height 50 Meters (m/s)",
+    "wind_speed_10m_ms": "Wind Speed at Anemometer Height 10 Meters (m/s)",
+    "wind_direction_50m_deg": "Wind Direction at 50 Meters (Degrees azimuth)",
+    "relative_humidity_pct": "Relative Humidity at 2 Meters (%)",
+    "wind_power_density_w_m2": "Theoretical Wind Power Density at 50m (W/m\u00b2)"
+  },
+  "license": "Public Domain / NASA Open Data Policy",
+  "generated_at": "2026-10-24 04:25:15Z"
+}
