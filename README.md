@@ -76,8 +76,7 @@ paracas-renewable-energy-explorer/
 ├── requirements.txt             # Pinned Python package dependencies
 ├── .gitignore                   # Ignore cache, venv, and OS metadata
 ├── README.md                    # Comprehensive repository documentation
-├── ARTICLE_DEV_TO.md            # Ready-to-publish Dev.to / Medium article
-└── VIDEO_SCRIPT.md              # 3-5 minute video recording script & storyboard
+└── ARTICLE_DEV_TO.md            # Ready-to-publish Dev.to / Medium article
 ```
 
 ---

@@ -95,8 +95,7 @@ paracas-renewable-energy-explorer/
 ├── fetch_data.py                # NASA POWER API ingestion script
 ├── requirements.txt             # Pinned Python package dependencies
 ├── .gitignore                   # Ignore cache, venv, and temporary files
-├── README.md                    # Project documentation & local setup guide
-└── VIDEO_SCRIPT.md              # 3-5 minute video presentation script
+└── README.md                    # Project documentation & local setup guide
 ```
 
 ---
@@ -325,21 +324,7 @@ We choose **Streamlit Community Cloud** as our public cloud SaaS provider for ze
 | 🧪 **Automated CI/CD Workflow** | [.github/workflows/ci.yml](https://github.com/<YOUR_GITHUB_USERNAME>/paracas-renewable-energy-explorer/actions) |
 | 🛰️ **NASA POWER Open Data** | [NASA Prediction Of Worldwide Energy Resources](https://power.larc.nasa.gov/) |
 
----
-
-## 🎥 9. Video Demonstration (Under 5 Minutes)
-
-To satisfy the video requirement, a 4-minute visual demonstration walkthrough is recorded covering:
-- **0:00 - 0:45:** Introduction to the Paracas energy corridor and NASA POWER data source.
-- **0:45 - 2:00:** Live walkthrough of the dashboard (Time Series, Polar Wind Rose, Weibull Fit, and Complementarity Matrix).
-- **2:00 - 3:00:** Hybrid Plant Simulation (adjusting MW capacities and inspecting avoided $CO_2$).
-- **3:00 - 4:00:** GitHub Actions CI/CD automation and live deployment on Streamlit Cloud.
-
-*(Check out [VIDEO_SCRIPT.md](VIDEO_SCRIPT.md) for the complete scene-by-scene recording script).*
-
----
-
-## 💡 10. Lessons Learned & Best Practices
+## 💡 9. Lessons Learned & Best Practices
 
 1. **Leverage Data Snapshots for Reliability:** While live APIs are great, committing a validated historical snapshot (`data/paracas_renewable_daily.csv`) ensures your cloud application boots instantly and deterministically, immune to third-party API rate limits or downtime.
 2. **Combine Caching with Interactive Controls:** Using `@st.cache_data` on foundational functions allows users to slide between years and cut-in wind speeds with instant response times.
@@ -348,7 +333,7 @@ To satisfy the video requirement, a 4-minute visual demonstration walkthrough is
 
 ---
 
-## 🎯 11. Conclusion
+## 🎯 10. Conclusion
 
 Modern data applications bridge the gap between raw scientific observations and actionable business and policy decisions. 
 
