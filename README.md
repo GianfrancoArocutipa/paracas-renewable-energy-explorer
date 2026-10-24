@@ -2,7 +2,7 @@
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://streamlit.io/)
 [![Python Version](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
-[![CI/CD Pipeline](https://github.com/placeholder-user/paracas-renewable-energy-explorer/actions/workflows/ci.yml/badge.svg)](https://github.com/placeholder-user/paracas-renewable-energy-explorer/actions)
+[![CI/CD Pipeline](https://github.com/GianfrancoArocutipa/paracas-renewable-energy-explorer/actions/workflows/ci.yml/badge.svg)](https://github.com/GianfrancoArocutipa/paracas-renewable-energy-explorer/actions)
 [![NASA POWER Data](https://img.shields.io/badge/data-NASA%20POWER-orange.svg)](https://power.larc.nasa.gov/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
@@ -13,7 +13,7 @@
 ## 🌟 Live Demo & Public Deployment
 
 - 🚀 **Live Cloud Dashboard:** [https://paracas-renewable-energy-explorer.streamlit.app](https://paracas-renewable-energy-explorer.streamlit.app) *(Deploy via Streamlit Community Cloud)*
-- 📦 **Public GitHub Repository:** [https://github.com/placeholder-user/paracas-renewable-energy-explorer](https://github.com/placeholder-user/paracas-renewable-energy-explorer)
+- 📦 **Public GitHub Repository:** [https://github.com/GianfrancoArocutipa/paracas-renewable-energy-explorer](https://github.com/GianfrancoArocutipa/paracas-renewable-energy-explorer)
 - 📝 **Technical Article (Dev.to / Medium):** See [ARTICLE_DEV_TO.md](ARTICLE_DEV_TO.md)
 
 ---
@@ -89,7 +89,7 @@ paracas-renewable-energy-explorer/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/placeholder-user/paracas-renewable-energy-explorer.git
+git clone https://github.com/GianfrancoArocutipa/paracas-renewable-energy-explorer.git
 cd paracas-renewable-energy-explorer
 ```
 

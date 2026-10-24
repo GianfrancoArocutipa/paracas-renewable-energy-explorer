@@ -13,9 +13,9 @@ cover_image: https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=f
 **Published on:** *DEV Community / Medium / Hashnode*  
 **Reading Time:** 9 min read  
 **Tags:** `#python #datascience #streamlit #devops #cicd #renewableenergy #plotly`  
-**GitHub Repository:** `https://github.com/<YOUR_GITHUB_USERNAME>/paracas-renewable-energy-explorer`  
+**GitHub Repository:** `https://github.com/GianfrancoArocutipa/paracas-renewable-energy-explorer`  
 **Live Demo:** `https://paracas-renewable-energy-explorer.streamlit.app`  
-**Automated CI/CD:** `https://github.com/<YOUR_GITHUB_USERNAME>/paracas-renewable-energy-explorer/actions`  
+**Automated CI/CD:** `https://github.com/GianfrancoArocutipa/paracas-renewable-energy-explorer/actions`  
 
 ---
 
@@ -295,7 +295,7 @@ We choose **Streamlit Community Cloud** as our public cloud SaaS provider for ze
    git add .
    git commit -m "feat: complete paracas renewable energy explorer dashboard with CI"
    git branch -M main
-   git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/paracas-renewable-energy-explorer.git
+   git remote add origin https://github.com/GianfrancoArocutipa/paracas-renewable-energy-explorer.git
    git push -u origin main
    ```
 
@@ -304,7 +304,7 @@ We choose **Streamlit Community Cloud** as our public cloud SaaS provider for ze
 
 3. **Deploy the App:**
    - Click **"New app"**.
-   - Select your repository: `<YOUR_GITHUB_USERNAME>/paracas-renewable-energy-explorer`.
+   - Select your repository: `GianfrancoArocutipa/paracas-renewable-energy-explorer`.
    - Set the Branch to: `main`.
    - Set the Main file path to: `app.py`.
    - (Optional) Set your custom App URL: `paracas-renewable-energy-explorer.streamlit.app`.
@@ -319,9 +319,9 @@ We choose **Streamlit Community Cloud** as our public cloud SaaS provider for ze
 
 | Deliverable | URL / Reference |
 | :--- | :--- |
-| 📦 **Public GitHub Repository** | [https://github.com/<YOUR_GITHUB_USERNAME>/paracas-renewable-energy-explorer](https://github.com/<YOUR_GITHUB_USERNAME>/paracas-renewable-energy-explorer) |
+| 📦 **Public GitHub Repository** | [https://github.com/GianfrancoArocutipa/paracas-renewable-energy-explorer](https://github.com/GianfrancoArocutipa/paracas-renewable-energy-explorer) |
 | 🚀 **Live Cloud Dashboard** | [https://paracas-renewable-energy-explorer.streamlit.app](https://paracas-renewable-energy-explorer.streamlit.app) |
-| 🧪 **Automated CI/CD Workflow** | [.github/workflows/ci.yml](https://github.com/<YOUR_GITHUB_USERNAME>/paracas-renewable-energy-explorer/actions) |
+| 🧪 **Automated CI/CD Workflow** | [.github/workflows/ci.yml](https://github.com/GianfrancoArocutipa/paracas-renewable-energy-explorer/actions) |
 | 🛰️ **NASA POWER Open Data** | [NASA Prediction Of Worldwide Energy Resources](https://power.larc.nasa.gov/) |
 
 ## 💡 9. Lessons Learned & Best Practices
@@ -342,4 +342,4 @@ By combining **Streamlit** for rapid declarative UI development, **Plotly** for 
 ---
 
 ### 💬 Let's Connect!
-Have questions or suggestions on renewable resource modeling or cloud automation? Feel free to drop a comment below or star the [GitHub Repository](https://github.com/<YOUR_GITHUB_USERNAME>/paracas-renewable-energy-explorer)!
+Have questions or suggestions on renewable resource modeling or cloud automation? Feel free to drop a comment below or star the [GitHub Repository](https://github.com/GianfrancoArocutipa/paracas-renewable-energy-explorer)!
